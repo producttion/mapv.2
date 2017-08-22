@@ -40,7 +40,6 @@ function clickme(value) {
 }
 
 function clickToFrom() {
-
     if (statc.length == 0) {
         alert("มึงยังไม่ได้กดเลยไอ้โง่")
     }else{
@@ -50,8 +49,9 @@ function clickToFrom() {
         //     console.log(element)
         // }
 
-        dbref.push(statc)
-         statc=[];
+        document.getElementById('id01').style.display='block'
+        // dbref.push(statc)
+        //  statc=[];
     }
     
 }
