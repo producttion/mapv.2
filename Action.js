@@ -21,7 +21,7 @@ dbref.on("value",function(snapshot) {
 })
 var statc =[];
 
-dbref.push(statc)
+
 
 function clickme(value) {
 
@@ -36,9 +36,24 @@ function clickme(value) {
         status:true
     })
     }
-    
-
   
+}
+
+function clickToFrom() {
+
+    if (statc.length == 0) {
+        alert("มึงยังไม่ได้กดเลยไอ้โง่")
+    }else{
+        // for (var i = 0; i < statc.length; i++) {
+        //     var element = statc[i].lock;
+        //     dbref.push(element[i])
+        //     console.log(element)
+        // }
+
+        dbref.push(statc)
+         statc=[];
+    }
+    
 }
 
 console.log(statc.length)
