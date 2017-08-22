@@ -25,8 +25,11 @@ var statc =[];
 var num = 0 
 
 function clickme(value) {
-
     
+<<<<<<< HEAD
+=======
+
+>>>>>>> 42dac6bb70ec311e65ac253afdd4741e5069b4b1
     if(statc.length >= 5){
    alert("มึงจะกดเกิน 5 ครั้งไม่ได้นะไอ้สัส")
     }else{
@@ -44,10 +47,21 @@ function clickToFrom() {
     if (statc.length == 0) {
         alert("มึงยังไม่ได้กดเลยไอ้โง่")
     }else{
+<<<<<<< HEAD
        
         dbref.push(statc)
        
          statc=[];
+=======
+        // for (var i = 0; i < statc.length; i++) {
+        //     var element = statc[i].lock;
+        //     dbref.push(element[i])
+        //     console.log(element)
+        // }
+        document.getElementById('id01').style.display='block'
+        // dbref.push(statc)
+        //  statc=[];
+>>>>>>> 42dac6bb70ec311e65ac253afdd4741e5069b4b1
     }
     
 }
