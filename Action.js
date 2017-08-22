@@ -19,42 +19,39 @@ dbref.on("value",function(snapshot) {
 
     
 })
+var status = true;
 var statc =[];
 
-
+var num = 0 
 
 function clickme(value) {
-
-    
 
     
     if(statc.length >= 5){
    alert("มึงจะกดเกิน 5 ครั้งไม่ได้นะไอ้สัส")
     }else{
         statc.push({
-        lock:value,
-        status:true
-    })
+            lock : value,
+            status :status
+        })
     }
   
 }
 
 function clickToFrom() {
 
+
     if (statc.length == 0) {
         alert("มึงยังไม่ได้กดเลยไอ้โง่")
     }else{
-        // for (var i = 0; i < statc.length; i++) {
-        //     var element = statc[i].lock;
-        //     dbref.push(element[i])
-        //     console.log(element)
-        // }
-
+       
         dbref.push(statc)
+       
          statc=[];
     }
     
 }
+
 
 console.log(statc.length)
 

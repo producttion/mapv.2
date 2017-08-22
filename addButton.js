@@ -21,13 +21,13 @@ $(document).ready(function () {
             }
             blog1.append(`
             <div class="blogH ">
-            <input onclick="clickme(`+numA1+`)" type="button" value="A`+numA1+`" class="button button1">
+            <input onclick="clickme(`+numA1+`)" type="button" value="A`+numA1+`" class="button button1" >
              </div>
              `);
             var newList = $('#blog1');
             newList.fadeIn();
             numA1 = numA1 + 1;
-        }, 0);
+        }, 0)
             
         var endBox2 = setInterval(function () {
             if (numA9 == numA15) {
