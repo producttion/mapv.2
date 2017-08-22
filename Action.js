@@ -24,10 +24,8 @@ var statc =[];
 
 
 function clickme(value) {
-
     
 
-    
     if(statc.length >= 5){
    alert("มึงจะกดเกิน 5 ครั้งไม่ได้นะไอ้สัส")
     }else{
@@ -49,9 +47,9 @@ function clickToFrom() {
         //     dbref.push(element[i])
         //     console.log(element)
         // }
-
-        dbref.push(statc)
-         statc=[];
+        document.getElementById('id01').style.display='block'
+        // dbref.push(statc)
+        //  statc=[];
     }
     
 }
