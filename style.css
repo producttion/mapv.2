@@ -1,8 +1,9 @@
 div.show-image {
-    /* background-image: url("https://scontent.fbkk2-5.fna.fbcdn.net/v/t34.0-12/20937659_2007684269463274_768762395_n.png?oh=ea27b0c8dcaea8e809427a60a38c37f9&oe=59999D36"); */
+    background-image: url("https://scontent.fbkk1-5.fna.fbcdn.net/v/t34.0-12/20937659_2007684269463274_768762395_n.png?oh=94302a23e08972b9320a540a0b5aee3d&oe=599EE336");
     background-repeat: round;    
-    height:960px;
-    width: 826px;
+    /* height:400px;
+    width: 350px; */
+    padding: 10% 20% 100%;
 }
 
 div.x1 {
@@ -98,7 +99,7 @@ input.button1 {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 30px 40px;
+    padding: 30px 35px;
     text-align: center;
     text-decoration: none;
     display: inline-block;

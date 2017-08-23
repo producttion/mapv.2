@@ -19,22 +19,20 @@ dbref.on("value",function(snapshot) {
 
     
 })
+var status = true;
 var statc =[];
 
-
+var num = 0 
 
 function clickme(value) {
-
-    
-
     
     if(statc.length >= 5){
    alert("มึงจะกดเกิน 5 ครั้งไม่ได้นะไอ้สัส")
     }else{
         statc.push({
-        lock:value,
-        status:true
-    })
+            lock : value,
+            status :status
+        })
     }
   
 }
@@ -55,6 +53,7 @@ function clickToFrom() {
     }
     
 }
+
 
 console.log(statc.length)
 
