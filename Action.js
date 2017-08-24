@@ -13,16 +13,25 @@ firebase.initializeApp(config);
 
 var dbRef = firebase.database();
 var dbref = dbRef.ref("controler");
-dbref.on("value", function(snapshot) {
+dbref.on("value", function (snapshot) {
     console.log(snapshot.val())
 
-
+    // $(document).ready(function () {
+        
+        // if (snapshot.val().status = true) {
+        //     $('.buttonH').prop('disabled', true);
+        //     $('.buttonW').prop('disabled', true);
+        // } else if (snapshot.val().status = false) {
+        //     $('.buttonH').prop('disabled', false);
+        //     $('.buttonW').prop('disabled', false);
+        // }
+    // })
 })
 var status = true;
 var statc = [];
 var arrytwo = [];
 var count = 0;
-var num = 0
+var num = 0;
 
 function clickme(value) {
 
@@ -33,7 +42,7 @@ function clickme(value) {
     if (arrytwo.length == 0) {
         statc.push({
             lock: value,
-            status: status
+            [status[value]]: status
         })
         arrytwo.push(value)
     } else {
@@ -74,3 +83,4 @@ function clickToFrom() {
 
 }
 console.log(statc.length)
+

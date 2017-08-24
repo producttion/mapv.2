@@ -14,6 +14,7 @@
     <!-- <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="bootstrap-3.3.7/dist/js/bootstrap.min.js">
     <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="from.css">
     <style>
         /* Full-width input fields */
 
@@ -27,6 +28,15 @@
             box-sizing: border-box;
         }
         /* Set a style for all buttons */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
         .buttonH {
             background-color: #4CAF50;
             color: white;
@@ -46,7 +56,7 @@
             width: auto;
             height: 100%;
             padding-top: 4%;
-            padding-right: 1%;
+            padding-right: 0.5%;
             /* padding-bottom: 2%; */
             padding-left: 1%;
         }
@@ -200,6 +210,13 @@
 </head>
 
 <body>
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button onclick="clickToFrom()" class="btn btn-primary">คลิกกูสิ</button>
+                    </div>
+                </div>
+            </nav>
     <div class="container">
         <div class="row">
             <div class="col show-image">
@@ -221,7 +238,7 @@
     <div id="id01" class="modal">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
     <div class="container">
-            <form class="form-horizontal modal-content animate" role="form" action="/action_page.php">
+            <form class="form-horizontal" role="form">
                 <h2>กรอกข้อมูลการจอง</h2>
                 <div class="form-group">
                     <label for="firstName" class="col-sm-3 control-label">ชื่อเต็ม</label>
