@@ -20,7 +20,7 @@ $(document).ready(function () {
                 clearInterval(endBox1);
             }
             blog1.append(`
-            <input onclick="clickme(`+numA1+`)" type="button" value="A`+numA1+`" class="buttonH btn btn-primary" >`);
+            <input id="a`+numA1+`" onclick="clickme(`+numA1+`)" type="button" value="A`+numA1+`" class="buttonH btn btn-primary" >`);
             var newList = $('#blog1');
             newList.fadeIn();
             numA1 = numA1 + 1;
@@ -31,7 +31,7 @@ $(document).ready(function () {
                 clearInterval(endBox2);
             }
             blog2.append(`
-            <input onclick="clickme(`+numA10+`)" type="button" value="A`+numA10+`" class="buttonW btn btn-primary">
+            <input id="a`+numA10+`" onclick="clickme(`+numA10+`)" type="button" value="A`+numA10+`" class="buttonW btn btn-primary">
             `);
             var newList = $('#blog2');
             newList.fadeIn();
@@ -43,7 +43,7 @@ $(document).ready(function () {
                 clearInterval(endBox3);
             }
             blog3.append(`
-            <input onclick="clickme(`+numA18+`)" type="button" value="A`+numA18+`" class="buttonH btn btn-primary">
+            <input id="a`+numA18+`" onclick="clickme(`+numA18+`)" type="button" value="A`+numA18+`" class="buttonH btn btn-primary">
              `);
             var newList = $('#blog3');
             newList.fadeIn();
@@ -55,7 +55,7 @@ $(document).ready(function () {
                 clearInterval(endBox4);
             }
             blog4.append(`
-            <input onclick="clickme(`+numA25+`)" type="button" value="A`+numA25+`" class="buttonW btn btn-primary">
+            <input id="a`+numA25+`" onclick="clickme(`+numA25+`)" type="button" value="A`+numA25+`" class="buttonW btn btn-primary">
             `);
             var newList = $('#blog4');
             newList.fadeIn();

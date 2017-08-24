@@ -12,22 +12,30 @@ var config = {
 firebase.initializeApp(config);
 
 var dbRef = firebase.database();
-var dbref = dbRef.ref("controler");
+var dbref = dbRef.ref("controler/-Ks8iWKUpEog7J2e1rUG/0/status");
 dbref.on("value", function (snapshot) {
+    var snap =snapshot.val()  
     console.log(snapshot.val())
-
+    console.log('status: '+ snap)
+      
     // $(document).ready(function () {
-        
-        // if (snapshot.val().status = true) {
-        //     $('.buttonH').prop('disabled', true);
-        //     $('.buttonW').prop('disabled', true);
-        // } else if (snapshot.val().status = false) {
-        //     $('.buttonH').prop('disabled', false);
-        //     $('.buttonW').prop('disabled', false);
-        // }
+    //     var num = 0;
+        if ( snapshot.val().status == 1) {
+        $('#a1[type="button"]').prop('disabled', true);
+            $('.buttonW').prop('disabled', true);
+        //     num += 1
+            
+        }
+        //  if (false == snapshot.val().status) {
+            $('.buttonH').prop('disabled', false);
+            $('.buttonW').prop('disabled', false);
+            // num = 0
+
+    //     }
+    //     console.log('num: '+num)
     // })
 })
-var status = true;
+var status = false;
 var statc = [];
 var arrytwo = [];
 var count = 0;
