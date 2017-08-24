@@ -1,50 +1,127 @@
 div.show-image {
     background-image: url("https://scontent.fbkk1-5.fna.fbcdn.net/v/t34.0-12/20937659_2007684269463274_768762395_n.png?oh=94302a23e08972b9320a540a0b5aee3d&oe=599EE336");
     background-repeat: round;
-    
-    padding: 1% 1% 100% 1%;
+    min-width: 16rem;
+    max-width: 100rem;
+    min-height: 40rem;
+    max-height: 40rem;
+    margin: auto;
 }
 
 div.x1 {
-   
-    padding: 16% 1% 1% 100%;
-
+    min-width: 15rem;
+    max-width: 100rem;
+    min-height: 6rem;
+    max-height: 40rem;
+    margin: auto;   
 }
  div.x2 {
-
-    padding: 100% 2% 1% 1%;
-    float: left;
+    min-width: 1rem;
+    max-width: 100rem;
+    min-height: 30rem;
+    max-height: 60rem;
+    margin-top: auto;
+    margin-right: 0.8%;
+    margin-bottom: auto;
+    margin-left: 4.5%;
 }
 
 div.x3 {
-    padding: 76% 6% 1% 1%;
     float: left;
+    width: 8%;
+    /* max-width: 4.7rem; */
+    min-height: 25.5rem;
+    /* max-height: 60rem; */
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    /* margin-left: auto; */
 }
 div.x4 {
-    padding: 4% 38% 3% 38%;
     float: left;
+    width: 78.5%;
+    /* max-width: 4.7rem; */
+    min-height: 2.5rem;
+    /* max-height: 60rem; */
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    /* margin-left: auto; */
 }
 div.x5 {
-    padding: 50% 38% 7% 24%;
     float: left;
+    width: 65%;
+    /* max-width: 4.7rem; */
+    min-height: 18.9rem;
+    /* max-height: 60rem; */
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    /* margin-left: auto; */
+}
+div.x6 {
+    /* padding: 50% 35% 7% 24%; */
+    /* float: left; */
+    float: left;
+    width: 40rem;
+    height: 38rem;
+    /* background-color: #fae3c4; */
+    border-radius: .25rem;
+}
+div.x7 {
+    /* padding: 50% 35% 7% 24%; */
+    /* float: left; */
+    float: left;
+    width: 53rem;
+    height: 5rem;
+    /* background-color: #fae3c4; */
+    border-radius: .25rem;
 }
 div.blog1 {
-    padding: 80% 4% 10% 10%;
     float: left;
+    width: 13.5%;
+    /* max-width: 4.7rem; */
+    min-height: 30rem;
+    /* max-height: 60rem; */
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    /* margin-left: auto; */
 }
 
 div.blog2 {
-    padding: 7% 30% 6% 53%;
     float: left;
+    width: 86.5%;
+    /* max-width: 4.7rem; */
+    min-height: 4.3rem;
+    /* max-height: 60rem; */
+    margin-top: auto;
+    /* margin-right: auto; */
+    margin-bottom: auto;
+    /* margin-left: auto; */
 }
 
 div.blog3 {
-    padding: 35% 7% 35% 7%;
     float: left;
+    width: 13.5%;
+    /* max-width: 4.7rem; */
+    min-height: 23.2rem;
+    /* max-height: 60rem; */
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    /* margin-left: auto; */
 }
 div.blog4 {
-    padding: 8% 38% 5% 24%;
     float: left;
+    width: 65%;
+    /* max-width: 4.7rem; */
+    min-height: 4.3rem;
+    /* max-height: 60rem; */
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    /* margin-left: auto; */
 }
 
 div.blogH {
@@ -81,3 +158,17 @@ input.button2 {
     font-size: 16px;
 }
 
+.bd-example {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-width: .2rem;
+    min-height: 16rem;
+}
+.bd-example-container{
+    min-width: 16rem;
+    /* max-width: 25rem; */
+    margin-right: auto;
+    margin-left: auto;
+}
