@@ -12,35 +12,62 @@ var config = {
 firebase.initializeApp(config);
 
 var dbRef = firebase.database();
-var dbref = dbRef.ref("controler/-Ks8iWKUpEog7J2e1rUG/0/status");
-dbref.on("value", function (snapshot) {
-    var snap =snapshot.val()  
-    console.log(snapshot.val())
-    console.log('status: '+ snap)
-      
-    // $(document).ready(function () {
-    //     var num = 0;
-        if ( snapshot.val().status == 1) {
-        $('#a1[type="button"]').prop('disabled', true);
-            $('.buttonW').prop('disabled', true);
-        //     num += 1
-            
-        }
-        //  if (false == snapshot.val().status) {
-            $('.buttonH').prop('disabled', false);
-            $('.buttonW').prop('disabled', false);
-            // num = 0
-
-    //     }
-    //     console.log('num: '+num)
-    // })
-})
+var dbref0 = dbRef.ref("controler/-Ks8iWKUpEog7J2e1rUG/0/status");
+dbref0.on("value", function (snapshot) {
+    var snap0 =snapshot.val()  
+    console.log(snap0)
+    if( snap0 == 1){
+        $('#a1').prop('disabled', true);
+    }else {$('#a1').prop('disabled', false);}
+});
+var dbref1 = dbRef.ref("controler/-Ks8iWKUpEog7J2e1rUG/1/status");
+dbref1.on("value", function (snapshot) {
+    var snap1 =snapshot.val()  
+    console.log(snap1)
+    if( snap1 == 1){
+        $('#a2').prop('disabled', true);
+    }else {$('#a2').prop('disabled', false);}
+});
+var dbref2 = dbRef.ref("controler/-Ks8iWKUpEog7J2e1rUG/2/status");
+dbref2.on("value", function (snapshot) {
+    var snap2 =snapshot.val()  
+    console.log(snap2)
+    if( snap2 == 1){
+        $('#a3').prop('disabled', true);
+    }else {$('#a3').prop('disabled', false);}
+});
+var dbref3 = dbRef.ref("controler/-Ks8iWKUpEog7J2e1rUG/3/status");
+dbref3.on("value", function (snapshot) {
+    var snap3 =snapshot.val()  
+    console.log(snap3)
+    if( snap3== 1){
+        $('#a4').prop('disabled', true);
+    }else {$('#a4').prop('disabled', false);}
+});
+var dbref4 = dbRef.ref("controler/-Ks8iWKUpEog7J2e1rUG/4/status");
+dbref4.on("value", function (snapshot) {
+    var snap4 =snapshot.val()  
+    console.log(snap4)
+    if( snap4 == 1){
+        $('#a5').prop('disabled', true);
+    }else {$('#a5').prop('disabled', false);}
+});
 var status = false;
 var statc = [];
 var arrytwo = [];
 var count = 0;
 var num = 0;
 
+
+// var firstName = $('#firstName').val();
+// var telePhone = $('#telephone').val();
+// var proDuct = $('#product').val();
+// function writeUserData() {
+//    var Reservations = dbRef.child("Reservations").set({
+//     firstName: firstName,
+//     telePhone: telePhone,
+//     proDuct: proDuct
+// })}
 function clickme(value) {
 
     if (statc.length >= 5) {
@@ -54,32 +81,34 @@ function clickme(value) {
         })
         arrytwo.push(value)
     } else {
-        for (var i = 0; i < arrytwo.length; i++) {
-            var element = arrytwo[i];
-            // console.log(element)
-            if (element == value) {
+        if (arrytwo.length == 0) {
+            statc.push({
+                lock: value,
+                status: status
+            })
+            arrytwo.push(value)
 
-                alert("มึงกดซ้ำไอ้สัส")
-                count++;
-                // count = 0;
+        } else {
+            for (var i = 0; i < arrytwo.length; i++) {
+                var element = arrytwo[i];
+            }
+
+            if (element === value) {
+                alert("กดแบ้ว")
+            } else {
+                statc.push({
+                    lock: value,
+                    status: status
+                })
+                arrytwo.push(value)
             }
         }
     }
-    if (count == 0) {
-        statc.push({
-            lock: value,
-            status: status
-        })
-        arrytwo.push(value)
 
 
-        count = 0;
-    }
 
-} // >5
 
-// arrytwo.length == 0
-
+}
 
 function clickToFrom() {
     if (statc.length == 0) {
