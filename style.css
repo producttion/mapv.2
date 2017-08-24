@@ -13,9 +13,10 @@ div.x1 {
     max-width: 100rem;
     min-height: 6rem;
     max-height: 40rem;
-    margin: auto;   
+    margin: auto;
 }
- div.x2 {
+
+div.x2 {
     min-width: 1rem;
     max-width: 100rem;
     min-height: 30rem;
@@ -37,6 +38,7 @@ div.x3 {
     margin-bottom: auto;
     /* margin-left: auto; */
 }
+
 div.x4 {
     float: left;
     width: 78.5%;
@@ -48,6 +50,7 @@ div.x4 {
     margin-bottom: auto;
     /* margin-left: auto; */
 }
+
 div.x5 {
     float: left;
     width: 65%;
@@ -59,15 +62,19 @@ div.x5 {
     margin-bottom: auto;
     /* margin-left: auto; */
 }
+
 div.x6 {
-    /* padding: 50% 35% 7% 24%; */
-    /* float: left; */
     float: left;
-    width: 40rem;
-    height: 38rem;
-    /* background-color: #fae3c4; */
-    border-radius: .25rem;
+    width: 65%;
+    /* max-width: 4.7rem; */
+    min-height: 18.9rem;
+    /* max-height: 60rem; */
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    /* margin-left: auto; */
 }
+
 div.x7 {
     /* padding: 50% 35% 7% 24%; */
     /* float: left; */
@@ -77,6 +84,7 @@ div.x7 {
     /* background-color: #fae3c4; */
     border-radius: .25rem;
 }
+
 div.blog1 {
     float: left;
     width: 13.5%;
@@ -112,6 +120,7 @@ div.blog3 {
     margin-bottom: auto;
     /* margin-left: auto; */
 }
+
 div.blog4 {
     float: left;
     width: 65%;
@@ -125,20 +134,23 @@ div.blog4 {
 }
 
 div.blogH {
-    width:100px;
-    height:81px;
+    width: 100px;
+    height: 81px;
     margin: auto;
     border: 4px solid #FFFFFF;
 }
+
 div.blogW {
-    width:88px; 
-    height:91px;
+    width: 88px;
+    height: 91px;
     float: left;
     margin: auto;
     border: 4px solid #FFFFFF;
 }
+
 input.button1 {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
+    /* Green */
     border: none;
     color: white;
     padding: 30px 35px;
@@ -147,8 +159,10 @@ input.button1 {
     display: inline-block;
     font-size: 16px;
 }
+
 input.button2 {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
+    /* Green */
     border: none;
     color: white;
     padding: 35px 30px;
@@ -166,7 +180,8 @@ input.button2 {
     border-width: .2rem;
     min-height: 16rem;
 }
-.bd-example-container{
+
+.bd-example-container {
     min-width: 16rem;
     /* max-width: 25rem; */
     margin-right: auto;
