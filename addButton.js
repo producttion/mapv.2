@@ -4,19 +4,19 @@ $(document).ready(function () {
     var blog3 = $('#blog3');
     var blog4 = $('#blog4');
     var numA1 = 1;
-    var numA8 = 8;
-    var numA9 = 9;
-    var numA15 = 15;
-    var numA16 = 16;
+    var numA12 = 12;
+    var numA13 = 13;
+    var numA20 = 20;
     var numA21 = 21;
-    var numA22 = 22;
-    var numA26 = 26;
+    var numA29 = 29;
+    var numA30 = 30;
+    var numA35 = 35;
 
 
 
     $(document).ready(function () {
         var endBox1 = setInterval(function () {
-            if (numA1 == numA8) {
+            if (numA1 == numA12) {
                 clearInterval(endBox1);
             }
             blog1.append(`
@@ -27,39 +27,39 @@ $(document).ready(function () {
         }, 0)
             
         var endBox2 = setInterval(function () {
-            if (numA9 == numA15) {
+            if (numA13 == numA20) {
                 clearInterval(endBox2);
             }
             blog2.append(`
-            <input onclick="clickme(`+numA9+`)" type="button" value="A`+numA9+`" class="buttonW">
+            <input onclick="clickme(`+numA13+`)" type="button" value="A`+numA13+`" class="buttonW">
             `);
             var newList = $('#blog2');
             newList.fadeIn();
-            numA9 = numA9 + 1;
+            numA13 = numA13 + 1;
         }, 0);
 
         var endBox3 = setInterval(function () {
-            if (numA16 == numA21) {
+            if (numA21 == numA29) {
                 clearInterval(endBox3);
             }
             blog3.append(`
-            <input onclick="clickme(`+numA16+`)" type="button" value="A`+numA16+`" class="buttonH">
+            <input onclick="clickme(`+numA21+`)" type="button" value="A`+numA21+`" class="buttonH">
              `);
             var newList = $('#blog3');
             newList.fadeIn();
-            numA16 = numA16 + 1;
+            numA21 = numA21 + 1;
         }, 0);
 
         var endBox4 = setInterval(function () {
-            if (numA22 == numA26) {
+            if (numA30 == numA35) {
                 clearInterval(endBox4);
             }
             blog4.append(`
-            <input onclick="clickme(`+numA22+`)" type="button" value="A`+numA22+`" class="buttonW">
+            <input onclick="clickme(`+numA30+`)" type="button" value="A`+numA30+`" class="buttonW">
             `);
             var newList = $('#blog4');
             newList.fadeIn();
-            numA22 = numA22 + 1;
+            numA30 = numA30 + 1;
         }, 0);
 
     });
