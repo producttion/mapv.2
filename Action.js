@@ -1,4 +1,3 @@
-
 // Initialize Firebase
 var config = {
 
@@ -13,49 +12,65 @@ var config = {
 firebase.initializeApp(config);
 
 var dbRef = firebase.database();
-var dbref =dbRef.ref("controler");
-dbref.on("value",function(snapshot) {
+var dbref = dbRef.ref("controler");
+dbref.on("value", function(snapshot) {
     console.log(snapshot.val())
 
-    
+
 })
 var status = true;
-var statc =[];
-
-var num = 0 
+var statc = [];
+var arrytwo = [];
+var count = 0;
+var num = 0
 
 function clickme(value) {
-    
-    if(statc.length >= 5){
-   alert("มึงจะกดเกิน 5 ครั้งไม่ได้นะไอ้สัส")
-    }else{
-        statc.push({
-            lock : value,
-            status :status
-        })
+
+    if (statc.length >= 5) {
+        alert("มึงจะกดเกิน 5 ครั้งไม่ได้นะไอ้สัส")
     }
-  
-}
+
+    if (arrytwo.length == 0) {
+        statc.push({
+            lock: value,
+            status: status
+        })
+        arrytwo.push(value)
+    } else {
+        for (var i = 0; i < arrytwo.length; i++) {
+            var element = arrytwo[i];
+            // console.log(element)
+            if (element == value) {
+
+                alert("มึงกดซ้ำไอ้สัส")
+                count++;
+                // count = 0;
+            }
+        }
+    }
+    if (count == 0) {
+        statc.push({
+            lock: value,
+            status: status
+        })
+        arrytwo.push(value)
+
+
+        count = 0;
+    }
+
+} // >5
+
+// arrytwo.length == 0
+
 
 function clickToFrom() {
     if (statc.length == 0) {
         alert("มึงยังไม่ได้กดเลยไอ้โง่")
-    }else{
-        // for (var i = 0; i < statc.length; i++) {
-        //     var element = statc[i].lock;
-        //     dbref.push(element[i])
-        //     console.log(element)
-        // }
+    } else {
+        document.getElementById('id01').style.display = 'block'
 
-        document.getElementById('id01').style.display='block'
-        // dbref.push(statc)
-        //  statc=[];
     }
-    
+
 }
-
-
 console.log(statc.length)
-
-    
-   
