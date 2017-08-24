@@ -28,41 +28,35 @@ function clickme(value) {
 
     if (statc.length >= 5) {
         alert("มึงจะกดเกิน 5 ครั้งไม่ได้นะไอ้สัส")
-    }
-
-    if (arrytwo.length == 0) {
-        statc.push({
-            lock: value,
-            status: status
-        })
-        arrytwo.push(value)
     } else {
-        for (var i = 0; i < arrytwo.length; i++) {
-            var element = arrytwo[i];
-            // console.log(element)
-            if (element == value) {
+        if (arrytwo.length == 0) {
+            statc.push({
+                lock: value,
+                status: status
+            })
+            arrytwo.push(value)
 
-                alert("มึงกดซ้ำไอ้สัส")
-                count++;
-                // count = 0;
+        } else {
+            for (var i = 0; i < arrytwo.length; i++) {
+                var element = arrytwo[i];
+            }
+
+            if (element === value) {
+                alert("กดแบ้ว")
+            } else {
+                statc.push({
+                    lock: value,
+                    status: status
+                })
+                arrytwo.push(value)
             }
         }
     }
-    if (count == 0) {
-        statc.push({
-            lock: value,
-            status: status
-        })
-        arrytwo.push(value)
 
 
-        count = 0;
-    }
 
-} // >5
 
-// arrytwo.length == 0
-
+}
 
 function clickToFrom() {
     if (statc.length == 0) {
