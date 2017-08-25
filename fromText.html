@@ -2,7 +2,7 @@
 <html>
 <style>
     /* Full-width input fields */
-
+    
     input[type=text],
     input[type=password] {
         width: 100%;
@@ -13,7 +13,7 @@
         box-sizing: border-box;
     }
     /* Set a style for all buttons */
-
+    
     button {
         background-color: #4CAF50;
         color: white;
@@ -24,25 +24,25 @@
         width: 100%;
     }
     /* Extra styles for the cancel button */
-
+    
     .cancelbtn {
         padding: 14px 20px;
         background-color: #f44336;
     }
     /* Float cancel and signup buttons and add an equal width */
-
+    
     .cancelbtn,
     .signupbtn {
         float: left;
         width: 50%
     }
     /* Add padding to container elements */
-
+    
     .container {
         padding: 16px;
     }
     /* The Modal (background) */
-
+    
     .modal {
         display: none;
         /* Hidden by default */
@@ -65,7 +65,7 @@
         padding-top: 60px;
     }
     /* Modal Content/Box */
-
+    
     .modal-content {
         background-color: #fefefe;
         margin: 5% auto 15% auto;
@@ -75,7 +75,7 @@
         /* Could be more or less, depending on screen size */
     }
     /* The Close Button (x) */
-
+    
     .close {
         position: absolute;
         right: 35px;
@@ -84,21 +84,21 @@
         font-size: 40px;
         font-weight: bold;
     }
-
+    
     .close:hover,
     .close:focus {
         color: red;
         cursor: pointer;
     }
     /* Clear floats */
-
+    
     .clearfix::after {
         content: "";
         clear: both;
         display: table;
     }
     /* Change styles for cancel button and signup button on extra small screens */
-
+    
     @media screen and (max-width: 300px) {
         .cancelbtn,
         .signupbtn {
@@ -116,38 +116,90 @@
         <form class="modal-content animate" action="/action_page.php">
             <div class="container">
                 <label><b>ชื่อ</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+                <input type="text" placeholder="Enter Email" name="email">
 
                 <label><b>นามสกุล</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="password" placeholder="Enter Password" name="psw">
 
                 <label><b>เบอร์โทร</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat">
 
                 <label><b>ชนิดสินค้า</b></label>
-                <input type="checkbox" checked="checked"> Remember me
-                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                <input type="checkbox" checked="checked">
 
                 <div class="clearfix">
                     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                     <button type="submit" class="signupbtn">Sign Up</button>
+
+
+
+
+
+
                 </div>
             </div>
         </form>
     </div>
+
+
+
+
+
+
+
+
+
+    <input type="button" value="Click" id="btntest" />
+
+
+
+
+
+
+
 
     <script>
         // Get the modal
         var modal = document.getElementById('id01');
 
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
+        window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
         }
-
     </script>
+
+    <script>
+        function myFunction() {
+            var selchbox = [];
+            var inputfields = document.getElementsByName("myCheck");
+            var ar_input = inputfields.length;
+
+
+            for (var i = 0; i < ar_input[i]; i++) {
+                if (inputfields[i].type == 'checkbox' && inputfields[i.checked == true])
+                    selchbox.push(inputfields[i].value);
+            }
+            return selchbox;
+
+
+        }
+
+
+        document.getElementById('btntest').onclick = function() {
+            var selchb = myfunction();
+            alert(selchb);
+            console.log(selchb);
+
+
+
+        }
+    </script>
+
+
+
+
 
 </body>
 

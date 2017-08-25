@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    Checkbox:
+    <input type="checkbox" name="myCheck" value="UK">United Kingdom
+    <input type="checkbox" name="myCheck" value="USA">United States
+    <input type="checkbox" name="myCheck" value="IL">Illinois
+    <input type="checkbox" name="myCheck" value="MA">Massachusetts
+    <input type="checkbox" name="myCheck" value="UT">Utah
+
+    <input type="button" value="Click" id="btntest" />
+
+    <script>
+        function myFunction() {
+            var selchbox = [];
+            var inputfields = document.getElementsByName("myCheck");
+            var ar_inputflds = inputfields.length;
+
+            for (var i = 0; i < ar_inputflds; i++) {
+                if (inputfields[i].type == 'checkbox' && inputfields[i].checked == true)
+                    selchbox.push(inputfields[i].value);
+            }
+            return selchbox;
+
+        }
+
+        document.getElementById('btntest').onclick = function() {
+            var selchb = myFunction();
+            alert(selchb);
+            console.log(selchb);
+        }
+    </script>
+
+</body>
+
+</html>

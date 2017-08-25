@@ -4,62 +4,62 @@ $(document).ready(function () {
     var blog3 = $('#blog3');
     var blog4 = $('#blog4');
     var numA1 = 1;
-    var numA8 = 8;
     var numA9 = 9;
-    var numA15 = 15;
-    var numA16 = 16;
-    var numA21 = 21;
-    var numA22 = 22;
-    var numA26 = 26;
+    var numA10 = 10;
+    var numA17 = 17;
+    var numA18 = 18;
+    var numA24 = 24;
+    var numA25 = 25;
+    var numA30 = 30;
 
 
 
     $(document).ready(function () {
         var endBox1 = setInterval(function () {
-            if (numA1 == numA8) {
+            if (numA1 == numA9) {
                 clearInterval(endBox1);
             }
             blog1.append(`
-            <input onclick="clickme(`+numA1+`)" type="button" value="A`+numA1+`" class="buttonH" >`);
+            <input id="a`+numA1+`" onclick="clickme(`+numA1+`)" type="button" value="A`+numA1+`" class="buttonH btn btn-primary" >`);
             var newList = $('#blog1');
             newList.fadeIn();
             numA1 = numA1 + 1;
         }, 0)
             
         var endBox2 = setInterval(function () {
-            if (numA9 == numA15) {
+            if (numA10 == numA17) {
                 clearInterval(endBox2);
             }
             blog2.append(`
-            <input onclick="clickme(`+numA9+`)" type="button" value="A`+numA9+`" class="buttonW">
+            <input id="a`+numA10+`" onclick="clickme(`+numA10+`)" type="button" value="A`+numA10+`" class="buttonW btn btn-primary">
             `);
             var newList = $('#blog2');
             newList.fadeIn();
-            numA9 = numA9 + 1;
+            numA10 = numA10 + 1;
         }, 0);
 
         var endBox3 = setInterval(function () {
-            if (numA16 == numA21) {
+            if (numA18 == numA24) {
                 clearInterval(endBox3);
             }
             blog3.append(`
-            <input onclick="clickme(`+numA16+`)" type="button" value="A`+numA16+`" class="buttonH">
+            <input id="a`+numA18+`" onclick="clickme(`+numA18+`)" type="button" value="A`+numA18+`" class="buttonH btn btn-primary">
              `);
             var newList = $('#blog3');
             newList.fadeIn();
-            numA16 = numA16 + 1;
+            numA18 = numA18 + 1;
         }, 0);
 
         var endBox4 = setInterval(function () {
-            if (numA22 == numA26) {
+            if (numA25 == numA30) {
                 clearInterval(endBox4);
             }
             blog4.append(`
-            <input onclick="clickme(`+numA22+`)" type="button" value="A`+numA22+`" class="buttonW">
+            <input id="a`+numA25+`" onclick="clickme(`+numA25+`)" type="button" value="A`+numA25+`" class="buttonW btn btn-primary">
             `);
             var newList = $('#blog4');
             newList.fadeIn();
-            numA22 = numA22 + 1;
+            numA25 = numA25 + 1;
         }, 0);
 
     });

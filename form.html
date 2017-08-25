@@ -1,0 +1,54 @@
+
+
+    <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7/dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="from.css">
+<div class="container">
+        <form class="form-horizontal" role="form">
+            <h2>กรอกข้อมูลการจอง</h2>
+            <div class="form-group">
+                <label for="firstName" class="col-sm-3 control-label">ชื่อเต็ม</label>
+                <div class="col-sm-9">
+                    <input type="text" id="firstName" placeholder="ลงชื่อ" class="form-control" autofocus>
+                    <span class="help-block">ชื่อ, นามสกุล, เช่น: นาย ก., เอ๋กเอ๋ก</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-sm-3 control-label">เบอร์โทรศัพท์</label>
+                <div class="col-sm-9">
+                    <input type="tel" id="telephone" placeholder="เบอร์โทร" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="product" class="col-sm-3 control-label">ชนิดสินค้า</label>
+                <div class="col-sm-9">
+                    <select id="product" class="form-control">
+                        <option>เสื้อผ้า</option>
+                        <option>อาหาร</option>
+                        <option>เครื่องสำอาง</option>
+                        <option>Denmark</option>
+                        <option>Ecuador</option>
+                        <option>Fiji</option>
+                        <option>Gabon</option>
+                        <option>Haiti</option>
+                    </select>
+                </div>
+            </div> <!-- /.form-group -->
+            <div class="form-group">
+                <div class="col-sm-9 col-sm-offset-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">ยืนยัน <a href="#">คำขอ</a>
+                        </label>
+                    </div>
+                </div>
+            </div> <!-- /.form-group -->
+            <div class="form-group">
+                <div class="col-sm-9 col-sm-offset-3">
+                    <button type="submit" class="btn btn-primary btn-block">ตกลง</button>
+                </div>
+            </div>
+        </form> <!-- /form -->
+    </div> <!-- ./container -->
